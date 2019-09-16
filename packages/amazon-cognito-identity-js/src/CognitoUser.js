@@ -1152,6 +1152,7 @@ export default class CognitoUser {
    * @returns {void}
    */
   getSession(callback) {
+    console.log('src');
     if (this.username == null) {
       return callback(new Error('Username is null. Cannot retrieve a new session'), null);
     }
